@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    body{
+      background-color: rgb(228, 222, 222);
+    }
+    #imagen1{
+        justify-content: center;
+        width: 100%;
+
+    }
+    .imageconteiner img {
+            overflow: hidden;
+            border-radius: 50%;
+            height: 250px;
+            width: 30%;
+            object-fit: cover;
+        }
+    .card-description {
+      font-size: 14px; 
+      color: #777; 
+    }
+    #gallery {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+        padding: 0px; 
+        text-align: center; 
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%; 
+        z-index: 1000; 
+      }
+        .imasli{
+          height: 500px;
+          width: 20px;
+        }
+        .imagen1{
+          width: 100%;
+          z-index: 1000; 
+        }
+
+        .gallery-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .gallery-item {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            display: block;
+        }
+        .gallery-navigation {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            top: -50px;
+        }
+
+        .nav-button {
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .nav-button:hover {
+            background-color: #005f5f;
+        }
+        footer{
+      background-color: gray;
+      } 
+      #textx{
+        background-color: gray;
+      }
+</style>
+<header>
+    <div class="px-3 py-2 text-bg-dark border-bottom">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+            </a>
+  
+            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+              <li>
+                <a href="#" class="nav-link text-secondary">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="Habilidades.html" class="nav-link text-white">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"/></svg>
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a href="edu.html" class="nav-link text-white">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"/></svg>
+                  Experiencia
+                </a>
+              </li>
+              <li>
+                <a href="proyectos.html" class="nav-link text-white">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
+                  Proyectos
+                </a>
+              </li>
+              <li>
+                <a href="MasDatos.html" class="nav-link text-white">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
+                  Acerca de mi
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="px-3 py-2 border-bottom mb-3" id="textx">
+        <div class="container d-flex flex-wrap justify-content-center">
+          <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+          </form>
+  
+          <div class="text-end">
+            <button type="button" class="btn btn-light text-dark me-2">Buscar</button>
+            <button type="button" class="btn btn-primary">Iniciar Sesion</button>
+          </div>
+        </div>
+      </div>
+</header>
+<br><br>
+<br><br><br><br>
+<body>
+  <div class="container-fluid ">
+    <img id="imagen1" src="" alt="">
+    <h1>Hola, yo soy el usuario</h1>
+    <div class="imageconteiner">
+      <img  loading="lazy" width="176" height="176" decoding="async" data-nimg="1" srcset="imagenes/Anonimo.jpg!w700wp" src="imagenes/Anonimo.jpg!w700wp" style="color: transparent;">
+    </div>
+    <h4>En este portafolio, me conoceras por mi experiencia, habilidades, proyectos, gustos, mi contacto y todo lo que te pueda ayudar hacer un portafolio web.</h4>
+    <h4>Soy estudiante de la carrera Ingeniereia en sistemas informaticos, me encanta la tecnologia y lo que puede hacer, por eso escogi esta carrera. Planeo mejorar y continuar trabajando.</h4>
+    <img class="imagen1" src="https://cocosolution.com/cms/uploads/608b02a630405ebaa3681dad4d489f65.png" alt="">
+    <section id="gallery">
+      <div class="gallery-container">
+          <figure class="gallery-item">
+              <img class="imasli" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuMFJkwKYntOfm07r0IDZgK1arpN4mV3jmeg&s" alt="Imagen 1">
+              <figcaption></figcaption>
+          </figure>
+          <figure class="gallery-item">
+              <img class="imasli" src="https://virtual.cuc.edu.co/hubfs/Imported_Blog_Media/trabajo-para-ingeniero-de-sistemas-.webp" alt="Imagen 2">
+              <figcaption></figcaption>
+          </figure>
+          <figure class="gallery-item">
+              <img class="imasli" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStFTy99RDW4HQ48F0xCpeCJd8CpX9lO6YZJA&s" alt="Imagen 3">
+              <figcaption></figcaption>
+          </figure>
+
+      </div>
+      <nav class="gallery-navigation">
+          <button class="nav-button prev-button">Anterior</button>
+          <button class="nav-button next-button">Siguiente</button>
+      </nav>
+  </section>
+      <h1 class="visually-hidden">Features examples</h1>
+<main>
+  <div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">Contenido</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Habilidades</h3>
+        <p>Te presentamos mis habilidades como programador, diseñador y desarrollador web, aplicaciones de desarrollo usada, manejo de interfaces y conocimiento de tecnologia.</p>
+        <a href="Habilidades.html" class="icon-link">
+          Mis habilidades
+          <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Experiencia</h3>
+        <p>Conoceras mis experiencias en la vida profesional, conocimiento en la carrera y aplicaciones en las que voy de momento, educacion en colegio u otras instituciones.</p>
+        <a href="edu.html" class="icon-link">
+         Entra a educacion
+          <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Proyectos</h3>
+        <p>Estamos trabajando en diferentes proyectos referentes al desarrollo web, interfaces y otros en la carrera de sistemas. Algunos ya terminados, otros que estan en proceso.</p>
+        <a href="proyectos.html" class="icon-link">
+          Mis proyectos
+          <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Acerca de mi</h3>
+        <p>Mostrare lo que me gusta hacer, las cosas a las que estoy pasionado y que me entretengo cada que tengo tiempo libre. Plataformas y videojuegos que disfruto mucho.</p>
+        <a href="MasDatos.html" class="icon-link">
+          Lo que me gusta
+          <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Formulario</h3>
+        <p>A pesar de que sea anonimo, soy como cualquier usuario normal. Quisiera conocerte enviando tus datos personales o comunicandome por dos de mis correos electronicos.</p>
+        <a href="contact.html" class="icon-link">
+          Contactar form
+          <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+        
+          <nav aria-label="...">
+            <ul class="pagination pagination-sm">
+              <li class="page-item active" aria-current="page">
+                <span class="page-link">Home</span>
+              </li>
+              <li class="page-item"><a class="page-link" href="Habilidades.html">Habilidades</a></li>
+              <li class="page-item"><a class="page-link" href="edu.html">Experiencia</a></li>
+              <li class="page-item"><a class="page-link" href="proyectos.html">Proyectos</a></li>
+              <li class="page-item"><a class="page-link" href="MasDatos.html">Gustos</a></li>
+              <li class="page-item"><a class="page-link" href="contact.html">Formulario</a></li>
+            </ul>
+          </nav>
+        </main>
+        </div>
+
+</body>
+<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-3">
+      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+      </a>
+      <p class="text-body-secondary">&copy; 2024 Univalle-Programacion web I</p>
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-body-secondary">Home</a></li>
+        <li class="nav-item mb-2"><a href="Habilidades.html" class="nav-link p-0 text-body-secondary">Habilidades</a></li>
+        <li class="nav-item mb-2"><a href="edu.html" class="nav-link p-0 text-body-secondary">Experiencia</a></li>
+        <li class="nav-item mb-2"><a href="proyectos.html" class="nav-link p-0 text-body-secondary">Proyectos</a></li>
+        <li class="nav-item mb-2"><a href="MasDatos.html" class="nav-link p-0 text-body-secondary">Acerca de mi</a></li>
+      </ul>
+    </div>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-body-secondary">Home</a></li>
+        <li class="nav-item mb-2"><a href="Habilidades.html" class="nav-link p-0 text-body-secondary">Habilidades</a></li>
+        <li class="nav-item mb-2"><a href="edu.html" class="nav-link p-0 text-body-secondary">Experiencia</a></li>
+        <li class="nav-item mb-2"><a href="proyectos.html" class="nav-link p-0 text-body-secondary">Proyectos</a></li>
+        <li class="nav-item mb-2"><a href="MasDatos.html" class="nav-link p-0 text-body-secondary">Acerca de mi</a></li>
+      </ul>
+    </div>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-body-secondary">Home</a></li>
+        <li class="nav-item mb-2"><a href="Habilidades.html" class="nav-link p-0 text-body-secondary">Habilidades</a></li>
+        <li class="nav-item mb-2"><a href="edu.html" class="nav-link p-0 text-body-secondary">Experiencia</a></li>
+        <li class="nav-item mb-2"><a href="proyectos.html" class="nav-link p-0 text-body-secondary">Proyectos</a></li>
+        <li class="nav-item mb-2"><a href="MasDatos.html" class="nav-link p-0 text-body-secondary">Acerca de mi</a></li>
+      </ul>
+    </div>
+    </div>
+  </footer>
+  <script>
+    let currentIndex = 0;
+
+    document.querySelector('.prev-button').addEventListener('click', () => {
+        navigate(-1);
+    });
+
+    document.querySelector('.next-button').addEventListener('click', () => {
+        navigate(1);
+    });
+
+    function navigate(direction) {
+        const galleryContainer = document.querySelector('.gallery-container');
+        const totalImages = document.querySelectorAll('.gallery-item').length;
+
+        currentIndex = (currentIndex + direction + totalImages) % totalImages;
+        const offset = -currentIndex * 100;
+
+        galleryContainer.style.transform = `translateX(${offset}%)`;
+    }
+</script>
+<script>
+    let autoplayInterval = null;
+    
+    function startAutoplay(interval) {
+       stopAutoplay(); // Detiene cualquier autoplay anterior para evitar múltiples intervalos.
+       autoplayInterval = setInterval(() => {
+          navigate(1); 
+       }, interval);
+    }
+    
+    function stopAutoplay() {
+       clearInterval(autoplayInterval);
+    }
+   
+    startAutoplay(3000);
+    document.querySelectorAll('.nav-button').forEach(button => {
+        button.addEventListener('click', stopAutoplay);
+    });
+    </script>
+</html>
