@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: aqua;
+        }
+        .container1{
+            background-color: chartreuse;
+
+        }
+        .c1l{
+            background-color: red;
+        }
+        .c2l{
+            background-color: limegreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registro pacientes caja nacional</h1>
+        <fieldset class="container1">
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre:</label>
+            <br>
+            <input type="text" name="nombre" id="nombre">
+            <br>
+            <label for="apellidos">Apellidos:</label>
+            <br>
+            <input type="text" name="apellidos" id="apellidos">
+            <br>
+            <label for="sexo">Sexo:</label>
+            <br>
+            <input type="radio" name="sexo" id="hombre" value="hombre">
+            <label for="hombre">Hombre</label>
+            <input type="radio" name="sexo" id="mujer" value="mujer">
+            <label for="mujer">Mujer</label>
+            <input type="radio" name="sexo" id="otro" value="otro">
+            <label for="otro">Otro</label>
+            <br>
+            <label for="fecha">Fecha de nacimiento:</label>
+            <br>
+            <input type="date" name="fecha" id="fecha">
+            <br>
+            <label for="direccion">Direccion:</label>
+            <br>
+            <textarea name="direccion" id="direccion" cols="50" rows="4"></textarea>
+            <br>
+
+        </fieldset>
+        <br>
+        <fieldset class="container1">
+            <legend>Datos generados examen</legend>
+            <br>
+            <label for="alergia">Alergias:</label>
+            <br>
+            <select name="alergia" id="alergia">
+                <option value="mn">Mani</option>
+                <option value="gt">Gatos</option>
+                <option value="dg">Perro</option>
+                <option value="mr">Mariscos</option>
+            </select>
+            <label for="tipo">Tipo de sangre:</label>
+            <br>
+            <input type="text" name="tipo" id="tipo">
+            <br>
+            <label for="relacion">Relacion directa socio:</label>
+            <br>
+            <select name="relacion" id="relacion">
+                <option value="es">Esposo(a)</option>
+                <option value="Hj">Hijo(a)</option>
+                <option value="hr">Hermano(a)</option>
+                <option value="md">Madre/Padre</option>
+            </select>
+            <br>
+
+        </fieldset>
+        <br>
+        <fieldset class="container1">
+            <legend>Datos extra:</legend>
+            <br>
+            <label for="operacion">Operaciones anteriores:</label>
+            <br>
+            <input type="radio" name="operacion" id="si" value="Si">
+            <label for="si">Si</label>
+            <input type="radio" name="operacion" id="no" value="no">
+            <label for="no">No</label>
+            <br>
+            <label for="enfermedad">Enfermedades de base:</label>
+            <br>
+            <input type="checkbox" name="enfermedad_d" id="diabetes">
+            <label for="diabetes">Diabetes</label>
+            <input type="checkbox" name="enfermedad_r" id="renal">
+            <label for="renal">Enfermedad renal</label>
+            <input type="checkbox" name="enfermedad_h" id="hepatica">
+            <label for="hepatica">Enfermedad hepatica</label>
+            <input type="checkbox" name="enfermedad_o" id="otro">
+            <label for="otro">Otro</label>
+            <br>
+        </fieldset>
+        <br>
+        <input type="submit" value="Registrar" class="c1l">
+        <input type="submit" value="Cancelar" class="c2l">
+    </div>
+</body>
+</html>

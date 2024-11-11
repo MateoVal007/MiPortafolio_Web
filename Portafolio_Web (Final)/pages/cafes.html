@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de Imágenes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: beige;
+        }
+
+        .carrusel {
+            position: relative;
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .imagenes {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .contenedor-imagen {
+            position: relative;
+            min-width: 100%;
+            max-width: 100%;
+        }
+
+        .contenedor-imagen img {
+            width: 100%;
+            height: auto;
+        }
+
+        .descripcion {
+            position: absolute;
+            bottom: 50px;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.7);
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #prev {
+            left: 10px;
+        }
+
+        #next {
+            right: 10px;
+        }
+
+        .comprar-btn {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 5px 5px;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 5px;
+            top: 90%;
+        }
+
+        .comprar-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="carrusel">
+        <div class="imagenes">
+            <div class="contenedor-imagen">
+                <img src="https://dietarysupplementproducts.com/wp-content/uploads/2020/06/What-Are-The-Benefits-Of-Black-Coffee.jpg" alt="Imagen 1">
+                <p class="descripcion">Despierta tus sentidos con el auténtico sabor del café negro...</p>
+                <button class="comprar-btn" onclick="comprar('pago.html')">Comprar</button>
+            </div>
+            <div class="contenedor-imagen">
+                <img src="https://brookrest.com/wp-content/uploads/2020/05/AdobeStock_315919556-scaled.jpeg" alt="Imagen 2">
+                <p class="descripcion">Un shot de pura energía...</p>
+                <button class="comprar-btn" onclick="comprar('pago.html')">Comprar</button>
+            </div>
+            <div class="contenedor-imagen">
+                <img src="https://th.bing.com/th/id/OIP.-ZJ-dVxENbr1xxl7DavUpAHaE8?rs=1&pid=ImgDetMain" alt="Imagen 3">
+                <p class="descripcion">Dale un toque de suavidad a tu día...</p>
+                <button class="comprar-btn" onclick="comprar('pago.html')">Comprar</button>
+            </div>
+        </div>
+
+        <!-- Flechas de navegación -->
+        <button id="prev">&#10094;</button>
+        <button id="next">&#10095;</button>
+    </div>
+
+    <script>
+        let index = 0;
+        const images = document.querySelectorAll('.contenedor-imagen');
+        const totalImages = images.length;
+
+        function showImage() {
+            const offset = -index * 100;
+            document.querySelector('.imagenes').style.transform = `translateX(${offset}%)`;
+        }
+
+        function nextImage() {
+            index = (index + 1) % totalImages;
+            showImage();
+        }
+
+        function prevImage() {
+            index = (index - 1 + totalImages) % totalImages;
+            showImage();
+        }
+
+        document.getElementById('next').addEventListener('click', nextImage);
+        document.getElementById('prev').addEventListener('click', prevImage);
+
+        // Cambiar imagen automáticamente cada 15 segundos
+        setInterval(nextImage, 15000);
+
+        // Función para el botón de comprar
+        function comprar(url) {
+            window.location.href = url; // Cambia 'pagina-compra.html' por la URL de la página que deseas
+        }
+    </script>
+</body>
+</html>

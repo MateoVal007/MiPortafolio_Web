@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de mi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+  body{
+    background-color: aliceblue;
+  }
+     .cartas{
+      font-family: Arial, sans-serif; 
+      background-color: #f4f4f4; 
+      padding: 20px; 
+      display: flex; 
+      flex-wrap: wrap; 
+      justify-content: space-around; 
+    }
+    .card {
+      background-color: white; 
+      border-radius: 10px; 
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+      margin: 10px; 
+      width: 300px;
+      transition: transform 0.3s ease;
+    }
+
+   
+    .card:hover {
+      transform: scale(1.05); 
+    }
+    #item{
+      color: azure;
+    }
+    .card img {
+      width: 100%; 
+      height: 200px; 
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+    .card-title {
+      font-size: 20px; 
+      margin: 0; 
+      color: #333; 
+    }
+    .card-price {
+      font-size: 18px; 
+      color: #4CAF50; 
+      margin: 10px 0;
+    }
+    footer{
+      color: white;
+      background-color: rgb(56, 52, 52);
+    }
+</style>
+<header>
+    <div class="px-3 py-2 text-bg-dark border-bottom">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+            </a>
+  
+            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+              <li>
+                <a href="indexport.html" class="nav-link text-white">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="Habilidades.html" class="nav-link text-white">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"/></svg>
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a href="edu.html" class="nav-link text-white">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"/></svg>
+                  Experiencia
+                </a>
+              </li>
+              <li>
+                <a href="proyectos.html" class="nav-link text-white">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
+                  Proyectos
+                </a>
+              </li>
+              <li>
+                <a href="" class="nav-link text-secondary">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
+                  Acerca de mi
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="px-3 py-2 border-bottom mb-3">
+        <div class="container d-flex flex-wrap justify-content-center">
+          <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+          </form>
+  
+          <div class="text-end">
+            <button type="button" class="btn btn-light text-dark me-2">Buscar</button>
+            <button type="button" class="btn btn-primary">Iniciar Sesion</button>
+          </div>
+        </div>
+      </div>
+</header>
+<body>
+  <h1>Acerca de mi</h1>
+  <p>En esta parte de este portafolio, me gustaria hablas acerca de mi. Acerca de lo que me gusta, disfruto, y como me entretengo.</p>
+  <p>Me gusta jugar videojuegos y ver peliculas(tambien series). Quisiera mostrar y explicar los videojuegos que mas me gustan y plataformas que mas uso.</p>
+  <h2 class="pb-2 border-bottom">Videojuegos</h2>
+    <section class="cartas">
+        <div class="card">
+            <img class="imagenvideo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3a2YfU1or1cvC-5f-dNkanjOFfDVmJYlFKQ&s" alt="Producto 1">
+            <div class="card-content">
+              <h2 class="card-title">Grand Theft Auto V</h2>
+              <p class="card-price">PS5, XboxSeries X, PC</p>
+              <p class="card-description">Uno de los videojuegos que mas disfruto cada dia; sea por su hitoria, jugabilidad, online, etc.</p>
+            </div>
+          </div>
+        
+        
+            <!-- Tarjeta 2 -->
+        <div class="card">
+                <img class="imagenvideo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv9p-nvZ585Y08glosWdKJq_pne_neSIAizg&s" alt="Producto 1">
+                <div class="card-content">
+                  <h2 class="card-title">Red Dead Redemption 2</h2>
+                  <p class="card-price">PS5, XboxSeries X, PC</p>
+                  <p class="card-description">La mejor experiencia que he jugado, con una gran historia y graficos alucinantes. Y un mundo grande y diverso que me hace seguir disfrutandolo.</p>
+                </div>
+              </div>
+              </div>
+            </div>
+        </section>
+        <section class="cartas">
+          <div class="card">
+            <img class="imagenvideo" src="https://i.ytimg.com/vi/hh5HV4iic1Y/maxresdefault.jpg" alt="Producto 1">
+            <div class="card-content">
+              <h2 class="card-title">Uncharted 4</h2>
+              <p class="card-price">PS5, PC</p>
+              <p class="card-description">Un juego divertido, llena de accion y personjes increibles que se volvio mi juego favorito.</p>
+            </div>
+          </div>
+        
+        
+            <!-- Tarjeta 2 -->
+        <div class="card">
+                <img class="imagenvideo" src="https://static1.srcdn.com/wordpress/wp-content/uploads/2024/05/queen-yharnum-gherman-lady-maria-from-bloodborne.jpg" alt="Producto 1">
+                <div class="card-content">
+                  <h2 class="card-title">Bloodborne</h2>
+                  <p class="card-price">PS5</p>
+                  <p class="card-description">Uno de los juegos mas dificiles que he jugado, cada paso del juego lleva a un nuevo desafio, enemigos desafiantes y la jugabilidad dinamica.</p>
+                </div>
+              </div>
+        <div class="card">
+                <img class="imagenvideo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPeo2jil7QVwFjzuoqCNxwv-EKjEi-B4TMEA&s" alt="Producto 1">
+                <div class="card-content">
+                  <h2 class="card-title">Ghost of tsushima</h2>
+                  <p class="card-price">PS5</p>
+                  <p class="card-description">Un mundo abierto que tiene detalles y diseño artistico que me fascina demasiado. Para mi, es un juego demasiado creativo.</p>
+                </div>
+              </div>  
+        </section>
+        <h2 class="pb-2 border-bottom">Plataformas digitales</h2>
+      <section class="cartas">
+        <div class="card">
+          <img class="imagenvideo" src="https://images.sftcdn.net/images/t_app-icon-m/p/a2f73840-9b6e-11e6-a5b8-00163ec9f5fa/3184479294/hbo-max-logo" alt="Producto 1">
+          <div class="card-content">
+            <h2 class="card-title">Max/HBO max</h2>
+            <p class="card-price"></p>
+            <p class="card-description">Es una de la plataformas que veo por todo el contenido que trae, series de hbo, peliculas de warnerbros y varias peliculas de terror que existe.</p>
+          </div>
+        </div>
+      
+      
+          <!-- Tarjeta 2 -->
+      <div class="card">
+              <img class="imagenvideo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvKj4VTEPGG8mcf4Tfdd_D9exWxOwYhOYP_g&s" alt="Producto 1">
+              <div class="card-content">
+                <h2 class="card-title">Netflix</h2>
+                <p class="card-price"></p>
+                <p class="card-description">Netflix es la primer plataforma de entretenimiento que use, tiene series y peliculas exclusivas que disfruta. Aunque no vea mucho, tienen series y peliculas que nunca salen.</p>
+              </div>
+            </div>
+      <div class="card">
+              <img class="imagenvideo" src="https://yt3.googleusercontent.com/j2CPWGfJvBR7k_hNcV6Dx7oOqHR2nJu16ZaD8r8o9jjS9G-Spn8B_5vqJ8CqvBScLJ3rKLrk=s900-c-k-c0x00ffffff-no-rj" alt="Producto 1">
+              <div class="card-content">
+                <h2 class="card-title">Disney +</h2>
+                <p class="card-price">PS5</p>
+                <p class="card-description">Me gusta esta plataforma porque tiene mucho contenido de animacion, sobretodo clasicos de disney, marvel, star wars y otros que me encanta ver.</p>
+              </div>
+            </div> 
+      </section>
+      <nav aria-label="...">
+        <ul class="pagination pagination-sm">
+          <li class="page-item"><a class="page-link" href="indexport.html">Home</a></li>
+          <li class="page-item"><a class="page-link" href="Habilidades.html">Habilidades</a></li>
+          <li class="page-item"><a class="page-link" href="edu.html">Experiencia</a></li>
+          <li class="page-item"><a class="page-link" href="proyectos.html">Proyectos</a></li>
+          <li class="page-item active" aria-current="page">
+            <span class="page-link">Acerca de mi</span>
+          </li>
+          <li class="page-item"><a class="page-link" href="contact.html">Formulario</a></li>
+        </ul>
+      </nav>
+</body>
+<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+  <div class="col mb-3">
+    <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+    </a>
+    <p class="text-body-secondary">&copy; 2024</p>
+  </div>
+
+  <div class="col mb-3">
+
+  </div>
+
+  <div class="col mb-3">
+    <h5>Section</h5>
+    <ul class="nav flex-column">
+      <li id="item" class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+      <li id="item" class="nav-item mb-2"><a href="Habilidades.html" class="nav-link p-0 text-body-secondary">Habilidades</a></li>
+      <li id="item" class="nav-item mb-2"><a href="edu.html" class="nav-link p-0 text-body-secondary">Experiencia</a></li>
+      <li id="item" class="nav-item mb-2"><a href="proyectos.html" class="nav-link p-0 text-body-secondary">Proyectos</a></li>
+      <li id="item" class="nav-item mb-2"><a href="" class="nav-link p-0 text-body-secondary">Acerca de mi</a></li>
+    </ul>
+  </div>
+
+  <div class="col mb-3">
+    <h5>Section</h5>
+    <ul class="nav flex-column">
+      <li id="item" class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+      <li id="item" class="nav-item mb-2"><a href="Habilidades.html" class="nav-link p-0 text-body-secondary">Habilidades</a></li>
+      <li id="item" class="nav-item mb-2"><a href="edu.html" class="nav-link p-0 text-body-secondary">Experiencia</a></li>
+      <li id="item" class="nav-item mb-2"><a href="proyectos.html" class="nav-link p-0 text-body-secondary">Proyectos</a></li>
+      <li id="item" class="nav-item mb-2"><a href="" class="nav-link p-0 text-body-secondary">Acerca de mi</a></li>
+    </ul>
+  </div>
+
+  <div class="col mb-3">
+    <h5>Section</h5>
+    <ul class="nav flex-column">
+      <li id="item" class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+      <li id="item" class="nav-item mb-2"><a href="Habilidades.html" class="nav-link p-0 text-body-secondary">Habilidades</a></li>
+      <li id="item" class="nav-item mb-2"><a href="edu.html" class="nav-link p-0 text-body-secondary">Experiencia</a></li>
+      <li id="item" class="nav-item mb-2"><a href="proyectos.html" class="nav-link p-0 text-body-secondary">Proyectos</a></li>
+      <li id="item" class="nav-item mb-2"><a href="" class="nav-link p-0 text-body-secondary">Acerca de mi</a></li>
+    </ul>
+  </div>
+</footer>
+</html>

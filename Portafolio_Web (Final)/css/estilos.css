@@ -1,0 +1,87 @@
+header{
+    background-color: #D8B48A;
+    color: white;
+    padding: 10px;
+    text-align: center;
+
+}
+footer{
+    background-color: #D8B48A;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    margin-top: auto;
+}
+h1 {
+    color: white; 
+    font-size: 3em;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000; 
+}
+.centrado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+p{
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000; 
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 8px 13px;
+}
+nav a:hover{
+    color: gray;
+}
+nav ul li:hover{
+    color: white;
+   
+    transform:scale(1.5,1.5);
+}
+.social-nav {
+    display: flex;
+    gap: 15px; 
+    justify-content: center; 
+    padding: 20px;
+}
+
+.social-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #fff; 
+    border-radius: 50%; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+    color: #333; 
+    text-decoration: none; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.social-nav a:hover {
+    background-color: #333; 
+    color: #fff; 
+}
+
+.social-nav i {
+    font-size: 24px; 
+}

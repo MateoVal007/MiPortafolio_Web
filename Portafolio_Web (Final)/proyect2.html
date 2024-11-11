@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SocelSI Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Personalización del estilo */
+    .navbar {
+      background-color: #333;
+    }
+    .navbar-brand, .nav-link, .navbar-toggler-icon {
+      color: #fff !important;
+    }
+    .jumbotron {
+      background-color: #800000;
+      color: white;
+      padding: 30px 20px;
+      margin-bottom: 20px;
+    }
+    .footer {
+      background-color: #f8f9fa;
+      padding: 10px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+    .comment{
+        background-color: white;
+        color: green;
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 10px;
+
+
+    }
+    .cmbox{
+        background-color: #333;
+        color: white;
+    }
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="p-3 text-bg-dark">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 text-secondary">SoceISI</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Inicio</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Categorias ▼</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Blog</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Contacto</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            
+          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+        </form>
+
+        
+      </div>
+    </div>
+  </header>
+  <!-- Jumbotron -->
+  <div class="jumbotron text-center">
+    <h1 class="display-4">SocelSI Blog</h1>
+    <p>Blog de diseño web</p>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <!-- Main Articles Section -->
+      <div class="col-md-8">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="#">Categorías</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Diseño Web</li>
+          </ol>
+        </nav>
+
+        
+        <div class="card">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://th.bing.com/th/id/OIP.fM63do50RU-TfbAuAOQbPQHaD3?rs=1&pid=ImgDetMain" class="img-fluid rounded-start" alt="" height="500%" width="500%">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Inicia proyectos HTML5 más rápido con Initializr</h5>
+                <p>28 de enero de 2015 por <a href="https://www.last.fm/es/music/Carlos+Arturo/+images/b7cbe0bd1f7b4dbd9b705fe32a30e8f1">Carlos Arturo</a></p>
+                
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ullam eos, quisquam nostrum est vel laudantium accusamus odio temporibus ipsa.</p>
+                <a href="#" class="btn btn-primary">Leer Más</a>
+                <a href="#" class="btn btn-success">Comentarios <p class="comment">20</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="card">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://th.bing.com/th/id/R.636ae75507885cd9cb4ff023b3262ae6?rik=DXbOssKG7szW4w&riu=http%3a%2f%2fwww.falconmasters.com%2fwp-content%2fuploads%2f2014%2f11%2fComo-hacer-una-plantilla-b%C3%A1sica-con-PHP-templates.jpg&ehk=ZECuQop94BqD0JVqEHRY6vxw4t5XxEXG1HsBoZrPEVE%3d&risl=&pid=ImgRaw&r=0" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Inicia proyectos HTML5 más rápido con Initializr</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi minima quos quisquam esse quam reprehenderit eum quae molestiae ex nesciunt.</p>
+                <a href="#" class="btn btn-primary">Leer Más</a>
+                <a href="#" class="btn btn-success">Comentarios <p class="comment">20</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="https://www.falconmasters.com/wp-content/uploads/2014/11/Como-cambiar-el-cursor-de-tu-sitio-web-con-propiedad-CSS.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Inicia proyectos HTML5 más rápido con Initializr</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi minima quos quisquam esse quam reprehenderit eum quae molestiae ex nesciunt.</p>
+                  <a href="#" class="btn btn-primary">Leer Más</a>
+                  <a href="#" class="btn btn-success">Comentarios <p class="comment">20</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Pagination -->
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-md-4">
+        <!-- Categories -->
+        <div class="card mb-3">
+          <div class="card-header">
+            Categorías
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Diseño Web</li>
+            <li class="list-group-item">CSS</li>
+            <li class="list-group-item">Cursos</li>
+            <li class="list-group-item">Elementos Web</li>
+            <li class="list-group-item">Jquery</li>
+          </ul>
+        </div>
+
+        <!-- Recent Articles -->
+        <div class="card">
+          <div class="card-header">
+            Artículos Recientes
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Inicia proyectos HTML5 más rápido con Initializr</li>
+            <li class="list-group-item">Cómo hacer una plantilla básica con PHP</li>
+            <li class="list-group-item">Cómo cambiar el cursor de tu sitio web con CSS</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Univalle - SocelSI</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

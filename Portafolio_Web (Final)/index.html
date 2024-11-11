@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fifty Coffees</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+            background-image: url('imagenes/cafe.jpg');
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            margin: 0;
+        }
+        header {
+            background-color: #D8B48A;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        footer {
+            background-color: #D8B48A;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: auto; 
+        }
+        .content {
+            flex: 1; 
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center; 
+            text-align: center; 
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4caf50; 
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #388e3c; 
+        }
+    </style>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Fifty Coffees</h1>
+    </header>
+    
+    <div class="content">
+        <h1 class="center">FIFTY COFFEES</h1>
+        <p>On a mission to discover my next great adventure, starting with fifty coffees to figure it out.</p>
+        
+        <nav>
+            <ul>
+                <li><a href="#home">Coffees</a></li>
+                <li><a href="#acerca">Project</a></li>
+                <li><a href="#servicios">Musing</a></li>
+                <li><a href="contacto.html">Gallery</a></li>
+            </ul>
+        </nav>
+        
+        <a href="pages/cafes.html" class="button">Ver Cafés</a>  
+        
+        <nav class="social-nav">
+            <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="T"><i>T</i></a>
+        </nav>
+    </div>
+    
+    <footer>
+        <p>@2024 Fifty Coffees - Program Web I</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canjear Cupón</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5dc;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff; 
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #3e2723; 
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #3e2723;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #d7ccc8; 
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50; 
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: beige; 
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #6d4c41; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Canjear Cupón</h1>
+        <form>
+            <label for="couponCode">Código del Cupón (12 Dígitos)</label>
+            <input type="text" id="couponCode" name="couponCode" maxlength="12" required pattern="\d{12}" title="Por favor, ingresa un código de 12 dígitos.">
+
+            <input type="submit" value="Canjear Cupón">
+        </form>
+        
+    </div>
+</body>
+</html>
